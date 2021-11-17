@@ -1,0 +1,4 @@
+# Excluir ficheros de audio temporales
+*.wav
+*.ogg
+*.txt
