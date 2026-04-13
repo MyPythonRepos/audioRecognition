@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.idea/
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.aac
+*.wma
+*.m4a
+*.webm
+*.txt
+files/
+test_main.py

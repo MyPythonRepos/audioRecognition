@@ -1,4 +1,15 @@
 # Excluir ficheros de audio temporales
 *.wav
+*.mp3
 *.ogg
+*.flac
+*.aac
+*.wma
+*.m4a
+*.webm
 *.txt
+
+# Cache de Python y pytest
+__pycache__/
+.pytest_cache/
+.idea/
