@@ -73,7 +73,24 @@ Los fragmentos no reconocibles se marcan como `[inaudible]`. Los errores de cone
 
 ## Tests
 
+### En local
+
 ```bash
 pip install pytest
 python -m pytest test_main.py -v
 ```
+
+### Con Docker
+
+Si no quieres instalar dependencias en tu equipo, puedes construir la imagen y ejecutar
+los tests dentro del contenedor:
+
+```bash
+docker build -t audio-recognition .
+docker run --rm \
+  -v "$PWD":/app \
+  --entrypoint python \
+  audio-recognition -m pytest test_main.py -v > test-results.txt 2>&1
+```
+
+El fichero `test-results.txt` se genera en la raíz del proyecto.

@@ -12,5 +12,6 @@ __pycache__/
 *.m4a
 *.webm
 *.txt
+!requirements.txt
 files/
 test_main.py
